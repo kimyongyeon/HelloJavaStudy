@@ -5,6 +5,10 @@ import java.util.List;
 
 public class BankerService {
 
+    public BankerService() {
+
+    }
+
     void getAccount() {
         BankConst.accountList.add(1);
         System.out.println(BankConst.accountList);
