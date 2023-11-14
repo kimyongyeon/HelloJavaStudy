@@ -83,4 +83,11 @@ public class RestController {
         return productService.getProduct(id);
     }
 
+    // 수량수정
+    public void decreaseStock(long id, int quantity) {
+        productService.decreaseStock(id, quantity);
+
+        System.out.println(String.format("재고수정이 완료되었습니다. %s", id));
+    }
+
 }

@@ -25,7 +25,7 @@ public class ProductService {
 
 
 
-    public void updateStock(long id, int quantity) {
+    public void decreaseStock(long id, int quantity) {
         ProductDTO productRepoById = productRepo.findById(id);
 
         if (productRepoById.getStockQuantity() < quantity) {

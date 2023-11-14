@@ -40,6 +40,8 @@ public class ShopMain {
         // 3. 주문생성
         restController.createOrder(OrderDTO.of(1, OrderStatus.ORDERED, product, 1000, profile, LocalDateTime.now()));
         // --------- 주문생성 ------------
+        // 상품 수량 변경
+        restController.decreaseStock(1L, 100);
 
 
     }
